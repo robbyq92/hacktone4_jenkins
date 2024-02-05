@@ -1,5 +1,5 @@
 // Jenkinsfile
-@Library('poc-library') _
+@Library('poc-library')
 java() // para proyectos Java
 // o
 nodejs() // para proyectos Node.js
