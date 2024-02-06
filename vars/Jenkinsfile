@@ -1,5 +1,23 @@
 // Jenkinsfile
-@Library('poc-library') _
-java() // para proyectos Java
+//@Library('poc-library') _
+ //java() // para proyectos Java
 // o
-nodejs() // para proyectos Node.js
+ //nodejs() // para proyectos Node.js
+
+
+@Library('poc-library') _
+
+pipeline {
+    agent none
+    stages {
+        stage ('Comprobando') {
+            steps {
+                    echo "Esto es la llamada al node"
+                script { 
+                    echo "Ejecutamos node"
+                    nodejs()
+                }
+            }
+        }
+    }
+}
