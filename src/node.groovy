@@ -1,4 +1,4 @@
-//@Library('poc-library') _
+@Library('poc-library') _
 pipeline {
     agent any
      // environment {
