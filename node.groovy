@@ -1,6 +1,9 @@
-
+@Library('poc-library') _
 pipeline {
     agent any
+      environment {
+        configServer = 'configServer'
+    }
     stages {
         stage('Checkout') {
             steps {
