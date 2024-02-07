@@ -1,4 +1,4 @@
-@Library('poc-library') _
+def call(Map pipeline) {
 pipeline {
     agent any
      // environment {
@@ -20,9 +20,10 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Stage: Deploy'
-                echo "ConfigServer: ${configServer}"
+                echo "ConfigServer: ${configuration.configServer}"
                 // Aquí iría tu código para el deploy
             }
         }
     }
+}
 }
