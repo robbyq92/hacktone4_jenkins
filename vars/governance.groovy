@@ -1,6 +1,5 @@
-// governance.groovy
 @Library('poc-library') _
-configuration {
+configuration(
     // Define la variable a nivel de gobernanza
-    configServer = "configServer"
-}
+    configServer: "configServer"
+)
